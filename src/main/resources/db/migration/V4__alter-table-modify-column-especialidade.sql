@@ -1,0 +1,1 @@
+ALTER TABLE medicos MODIFY especialidade VARCHAR(100) NOT NULL;
