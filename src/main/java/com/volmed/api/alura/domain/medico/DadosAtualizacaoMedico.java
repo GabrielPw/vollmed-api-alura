@@ -1,6 +1,6 @@
-package com.volmed.api.alura.medico;
+package com.volmed.api.alura.domain.medico;
 
-import com.volmed.api.alura.endereco.DadosEndereco;
+import com.volmed.api.alura.domain.endereco.DadosEndereco;
 import jakarta.validation.constraints.NotNull;
 
 public record DadosAtualizacaoMedico(

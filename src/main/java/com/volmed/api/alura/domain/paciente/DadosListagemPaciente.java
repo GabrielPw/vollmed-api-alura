@@ -1,4 +1,4 @@
-package com.volmed.api.alura.paciente;
+package com.volmed.api.alura.domain.paciente;
 
 public record DadosListagemPaciente(Long id, String nome, String email, String cpf) {
 

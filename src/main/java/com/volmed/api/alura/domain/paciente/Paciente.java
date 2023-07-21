@@ -1,6 +1,6 @@
-package com.volmed.api.alura.paciente;
+package com.volmed.api.alura.domain.paciente;
 
-import com.volmed.api.alura.medico.Endereco;
+import com.volmed.api.alura.domain.medico.Endereco;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

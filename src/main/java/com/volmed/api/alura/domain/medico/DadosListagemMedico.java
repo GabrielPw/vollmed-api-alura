@@ -1,4 +1,4 @@
-package com.volmed.api.alura.medico;
+package com.volmed.api.alura.domain.medico;
 
 import com.volmed.api.alura.enuns.EspecialidadeEnum;
 

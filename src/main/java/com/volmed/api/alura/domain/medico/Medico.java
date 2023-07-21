@@ -1,6 +1,5 @@
-package com.volmed.api.alura.medico;
+package com.volmed.api.alura.domain.medico;
 
-import com.volmed.api.alura.endereco.DadosEndereco;
 import com.volmed.api.alura.enuns.EspecialidadeEnum;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
@@ -52,7 +51,7 @@ public class Medico {
             this.endereco.atualizarInformacoes(dados.endereco());
     }
 
-    public void excluir() {
+    public void inativar() {
         this.ativo = false;
     }
 }

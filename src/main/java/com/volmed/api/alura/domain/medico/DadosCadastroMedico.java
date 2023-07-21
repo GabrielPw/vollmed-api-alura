@@ -1,8 +1,7 @@
-package com.volmed.api.alura.medico;
+package com.volmed.api.alura.domain.medico;
 
-import com.volmed.api.alura.endereco.DadosEndereco;
+import com.volmed.api.alura.domain.endereco.DadosEndereco;
 import com.volmed.api.alura.enuns.EspecialidadeEnum;
-import jakarta.persistence.Embedded;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

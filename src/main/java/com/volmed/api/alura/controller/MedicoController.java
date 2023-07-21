@@ -1,6 +1,7 @@
 package com.volmed.api.alura.controller;
 
-import com.volmed.api.alura.medico.*;
+import com.volmed.api.alura.domain.medico.*;
+import com.volmed.api.alura.domain.medico.*;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
-import java.util.List;
 
 @RestController
 @RequestMapping("/medicos")
@@ -54,8 +54,15 @@ public class MedicoController {
     public ResponseEntity excluirMedico(@PathVariable Long id){
 
         Medico medico = medicoRepository.getReferenceById(id);
-        medico.excluir();
+        medico.inativar();
 
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity detalhar(@PathVariable Long id){
+
+        Medico medico = medicoRepository.getReferenceById(id);
+        return ResponseEntity.ok(new DadosDetalhamentoMedico(medico));
     }
 }
